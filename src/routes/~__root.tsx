@@ -5,11 +5,18 @@ import { TanStackRouterDevtools } from "@tanstack/router-devtools";
 export const Route = createRootRoute({
   component: () => (
     <>
-      <div className="p-2 flex gap-2">
-        <Link to="/" className="[&.active]:font-bold">
+      <div className="p-2 join">
+        <Link
+          to="/"
+          className="[&.active]:btn-secondary btn btn-sm btn-primary join-item"
+        >
           Home
-        </Link>{" "}
-        <Link to="/about" className="[&.active]:font-bold">
+        </Link>
+
+        <Link
+          to="/about"
+          className="[&.active]:btn-secondary btn btn-sm btn-primary join-item"
+        >
           About
         </Link>
       </div>
