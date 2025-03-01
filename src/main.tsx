@@ -1,23 +1,18 @@
-import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
+import { StrictMode } from "react";
 
 import { QueryClientProvider } from "@tanstack/react-query";
-import { queryClient } from "./servicesApiEntities/queryClient.ts";
+import { queryClient } from "./queryClient.ts";
 
 import { RouterProvider } from "@tanstack/react-router";
-import { router } from "./servicesApiEntities/router.ts";
+import { router } from "./router.tsx";
 
 import "./index.css";
 
-const rootElement = document.getElementById("root")!;
-if (!rootElement.innerHTML) {
-  const root = createRoot(rootElement);
-
-  root.render(
-    <StrictMode>
-      <QueryClientProvider client={queryClient}>
-        <RouterProvider router={router} />
-      </QueryClientProvider>
-    </StrictMode>
-  );
-}
+createRoot(document.getElementById("root")!).render(
+  <StrictMode>
+    <QueryClientProvider client={queryClient}>
+      <RouterProvider router={router} />
+    </QueryClientProvider>
+  </StrictMode>
+);

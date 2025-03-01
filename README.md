@@ -3,12 +3,14 @@
 Preset includes:
 
 1. Vite + Typescript
-2. Tailwind + DaisyUI
-3. Tanstack React-Query
-4. Tanstack React-Router + configured
-5. Axios
-6. Zustand + Immer
-7. Lodash + @types/lodash
+2. ReactJS v19
+3. Tailwind + DaisyUI
+4. Tanstack React-Query + configured (with tool)
+5. Tanstack React-Router + configured (with tool)
+6. Axios
+7. Zustand + Immer
+8. Jotai
+9. Lodash + @types/lodash
 
 # Install
 
